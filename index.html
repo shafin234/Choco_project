@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern landing page with cinematic video hero section.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Simple Webpage</title>
+</head>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+</script>
+<body>
+
+    <!-- ═══════════════════════════════════════ INTRO SCREEN ═══════════════════════════════════════ -->
+    <div id="intro-screen">
+        <div class="intro-logo">Choco.</div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ HERO SECTION ═══════════════════════════════════════ -->
+    <section id="hero">
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Choco.</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="nav-btn">Sign In</button>
+
+            <!-- Hamburger -->
+                <button class="hamburger">
+    <span class="material-symbols-outlined">menu</span>
+</button>
+        </div>
+    </div>
+</nav>
+        <div class="hero-video-wrap">
+            <video
+                id="hero-video"
+                src="Make_the_droppping_202604261232.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+            ></video>
+        </div>
+
+        <!-- Optional overlay + content placeholder -->
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div id="text"><h1 id="title">Taste The</h1>
+            <h2 id="exp">Experience</h2>
+            <p>We serve the best quality of chocolate with rich experince</p>
+            <button>Order Now</button>
+            </div><!-- Your headline / CTA can go here -->
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════ END HERO ═══════════════════════════════════════════ -->
+
+    <!-- ═══════════════════════════════════════ PRODUCT SECTION ═══════════════════════════════════════ -->
+    <section id="product" class="product-section">
+        <div class="product-header">
+            <h2 class="section-title hidden">Our Exquisite Collection</h2>
+            <p class="section-subtitle hidden">Crafted with passion, meant to be savored.</p>
+        </div>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card hidden">
+                <div class="img-wrapper">
+                    <img src="choco.1.jpg" alt="Ibercacao Chocolate">
+                </div>
+                <div class="product-info">
+                    <h3>Ibercacao</h3>
+                    <p>The finest dark chocolate with delicate raspberry notes.</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card hidden">
+                <div class="img-wrapper">
+                    <img src="Choco.2.jpg" alt="Vizzio Chocolate">
+                </div>
+                <div class="product-info">
+                    <h3>Vizzio 60%</h3>
+                    <p>Rich and intense 60% cacao experience.</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card hidden">
+                <div class="img-wrapper">
+                    <img src="Choc.3.jpg" alt="Volt Protein Bar">
+                </div>
+                <div class="product-info">
+                    <h3>Volt Cocoa</h3>
+                    <p>High protein cocoa bar packed with almonds.</p>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ ABOUT US SECTION ═══════════════════════════════════════ -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-image hidden">
+                <div class="blur-wrapper">
+                    <img src="about.us2.jpg" alt="About Choco in Gazipur">
+                </div>
+            </div>
+            <div class="about-text hidden">
+                <h2 class="section-title">Our Story</h2>
+                <h3 class="location-tag">Gazipur, Dhaka</h3>
+                <p>
+                    From our humble beginnings in the vibrant heart of Gazipur, Dhaka, Choco. has grown into a premier destination for luxury chocolate experiences. We believe that true indulgence is born from passion, precision, and the finest ingredients sourced with care.
+                </p>
+                <p>
+                    Our prospect is simple yet ambitious: to redefine the art of chocolate-making in Bangladesh. Every piece we craft is a testament to our dedication to unparalleled quality, transforming simple cocoa into a masterpiece meant to be savored. Discover the rich heritage and innovative spirit that make Choco. truly exceptional.
+                </p>
+                <button class="buy-btn about-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand hidden">
+                <h2>Choco.</h2>
+                <p>Crafted with passion, meant to be savored.</p>
+            </div>
+            <div class="footer-links hidden">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact hidden">
+                <h3>Visit Us</h3>
+                <p>Gazipur, Dhaka</p>
+                <p>Bangladesh</p>
+                <p>contact@choco.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Choco. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script for Scroll Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, {
+                threshold: 0.1, // Trigger when 10% of the element is visible
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+
+            // Parallax Effect for Hero Section
+            const heroSection = document.getElementById('hero');
+            window.addEventListener('scroll', () => {
+                if (heroSection) {
+                    heroSection.style.transform = `translateY(-${window.scrollY * 0.5}px)`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
